@@ -1,0 +1,137 @@
+/****************
+  Google Fonts
+****************/
+@import url('https://fonts.googleapis.com/css?family=Asul|Work+Sans');
+
+
+/****************
+  General
+****************/
+html {
+  background: linear-gradient(to left, #0089ff59, rgba(76, 76, 76, 0.28)), url('./images/bg.jpg');
+}
+body {
+  margin: 0;
+  padding: 2.5vw;
+  font-family: 'Work Sans', sans-serif;
+}
+h1, h2 {
+  font-family: 'Asul', sans-serif;
+}
+#heading {
+  text-align: center;
+  color: white;
+}
+button {
+  padding: 5px 10px;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.3); 
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1em;
+}
+button:hover {
+  background-color: #6284c4;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 2px 2px rgba(0,0,0,0.22);
+}
+
+/****************
+  Options
+****************/
+#options {
+  text-align: center;
+}
+
+
+/****************
+  Editor and Preview
+****************/
+.edit-preview-div {
+  vertical-align: top;
+  margin: 2.5%;
+  width: 45%;
+  height: 650px;
+  display: inline-block;
+}
+.edit-preview-div button {
+  background-color: #c72121;
+}
+.edit-preview-div button:hover {
+  background-color: #dc3535;
+}
+#editor, #preview  {
+  box-sizing: border-box;
+  border: 1px solid #999;
+  width: 100%;
+  height: 550px;
+  overflow: scroll;
+  resize: none;
+  display: block;
+  background: #FEF0C6;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+#editor {
+  resize: none;
+  min-height: 550px;
+}
+.h2-title {
+  display: inline-block;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 10px 15px 15px 15px;
+  margin-bottom: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.edit-preview-div button {
+    position: relative;
+    display: inline-block;
+    left: 20px;
+}
+
+
+/****************
+  Footer
+****************/
+.footer {
+  text-align: center;
+  color: white;
+}
+.footer a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.footer a:hover {
+  color: #6495ed;
+}
+
+code {
+  background-color: oldlace;
+  color: red;
+}
+
+blockquote {
+  background: oldlace;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote p {
+  display: inline;
+}
+@media (max-width: 800px) {
+  .edit-preview-div {
+    margin: 2.5%;
+    width: 95%;
+    height: 650px;
+    display: block;
+  }
+}
